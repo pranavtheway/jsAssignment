@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script src="custom.js"></script>
+	</head>
+	<body>
+		<div class="container">
+ <div class="row">
+     <div class="col-25">
+
+     </div>
+     <div class="col-75">
+         <div id="success"></div>
+     </div>
+ </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="fname">Username</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="uname" name="username" maxlength="8" placeholder="Enter Unique User name.." onchange="validateOnChange(event);">
+                  <div id="uname-error" class="error-div uname-error-hide"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="lname">Email Id</label>
+                </div>
+                <div class="col-75">
+                  <input type="email" id="email" name="email" placeholder="Enter email address" onchange="validateOnChange(event);">
+                  <div id="email-error" class="error-div email-error-hide"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="lname">Date Of Birth</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="dob" name="dob" placeholder="Enter Date of Birth" onchange="validateOnChange(event);">
+                  <div id="dob-error" class="error-div dob-error-hide"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="subject">Password</label>
+                </div>
+                <div class="col-75">
+                    <input type="password" id="password" name="password" maxlength="8" placeholder="Enter Password" onchange="validateOnChange(event);">
+                    <div id="password-error" class="error-div password-error-hide"></div>
+                  </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="country">Country</label>
+                </div>
+                <div class="col-75">
+                  <select id="country" name="country" onblur="validateOnChange(event);">
+                    <option value="">--Select--</option>
+                  </select>
+                  <div id="cntry-error" class="error-div cntry-error-hide"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="state">state</label>
+                </div>
+                <div class="col-75">
+                  <select id="state" name="state" onblur="validateOnChange(event);">
+                    <option value="">--Select--</option>
+                  </select>
+                  <div id="state-error" class="error-div state-error-hide"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="city">City</label>
+                </div>
+                <div class="col-75">
+                  <select id="city" name="city" onblur="validateOnChange(event);">
+                    <option value="">--Select--</option>
+                  </select>
+                  <div id="city-error" class="error-div city-error-hide"></div>
+                </div>
+              </div>
+              <div class="row">
+                <input type="submit" value="Submit" id="submit" onclick="submitForm();">
+              </div>
+          </div>
+	</body>
+</html>
